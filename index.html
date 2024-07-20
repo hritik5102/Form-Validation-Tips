@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Guide</title>
+    <!-- Bulma CSS Framework -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+      integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column"></div>
+
+            <div class="column is-half">
+              <p class="title is-size-4">Form Validation</p>
+              <form class="box">
+                <!--  Name -->
+                <div class="field">
+                  <label class="label" for="name">Name</label>
+                  <div class="control">
+                    <input
+                      type="text"
+                      class="input"
+                      name="text"
+                      id="name"
+                      placeholder="Enter name"
+                    />
+                  </div>
+                </div>
+
+                <!--  Email -->
+                <div class="field">
+                  <label for="email" class="label"> Email </label>
+                  <div class="control has-icons-left">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      class="input"
+                      aria-label="Enter your email"
+                      placeholder="e.g. example@gmail.com"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Password -->
+                <div class="field">
+                  <label for="password" class="label"> Password </label>
+
+                  <p class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Password"
+                      id="password"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="field">
+                  <label for="confirm-password" class="label">
+                    Confirm Password
+                  </label>
+
+                  <p class="control has-icons-left">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Confirm Password"
+                      id="confirm-password"
+                    />
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+
+                <!-- Terms and condition checkbox -->
+                <div class="field mt-4">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox" />
+                      I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                  </div>
+                </div>
+
+                <!--  Submit button  -->
+                <div class="field mt-4">
+                  <p class="control">
+                    <button class="button is-link">Submit</button>
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <div class="column"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
