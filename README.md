@@ -30,3 +30,6 @@ Form Validation Tips Every Web Developer should know!
 
 7. Specific validation messages
    1. Let's suppose the validation accept string and number both and it should be minimum 8 charchter. if user provides input as "james" then will error out saying you need to input number as well, if he types "james12" then will error out and say it should be off minimum 8 char. Each error will be shown when the user tabs off from the current input field.
+
+8. Static height for error messages.
+    1. Whenever error message is shown, some part of UI gets shift, so that visual shift doesn't look very appealing and also your form will be slightly bigger because it will give some room to those error messages. So to overcome this problem make sure to have some height and width provided to the error message.

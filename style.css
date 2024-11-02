@@ -2,3 +2,10 @@ body {
   background-color: lavender;
   height: 100vh;
 }
+
+.userNameErrorMessage,
+.emailErrorMessage,
+.confirmPasswordErrorMessage,
+.passwordErrorMessage {
+  height: 12px;
+}
