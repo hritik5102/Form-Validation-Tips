@@ -19,3 +19,9 @@ Form Validation Tips Every Web Developer should know!
     1. We can provide a title attribute to show the custom tooltip message.
     2. Let's provide a title attribute on username field, which will look like: title="Username must be of 5 charachter and include a number."
 
+5. Create a custom tooltip message using Javascript methods
+    1. `reportValidity()` is a method available on form elements (<form>, <input>, <select>, <textarea>, etc.) that triggers the browser's built-in HTML5 form validation and reports the validity of the form or an individual input element.
+    2. `setCustomValidity(message)` is a method available on input elements (<input>, <select>, <textarea>) that allows you to set a custom validation message for that input. This method overrides the browser's default validation message for specific validation constraints (like required, pattern, etc.).
+    3. Together, they provide a robust mechanism for client-side form validation in web applications.
+
+
