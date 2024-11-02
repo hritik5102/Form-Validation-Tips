@@ -27,3 +27,6 @@ Form Validation Tips Every Web Developer should know!
 6. Don't validate too early.
     1. Instead we should wait for user to tab to the next input or when the current input is not focused i.e user tab away from the current input
       -> We can do that by replacing onInput event handler to onChange event handler.
+
+7. Specific validation messages
+   1. Let's suppose the validation accept string and number both and it should be minimum 8 charchter. if user provides input as "james" then will error out saying you need to input number as well, if he types "james12" then will error out and say it should be off minimum 8 char. Each error will be shown when the user tabs off from the current input field.

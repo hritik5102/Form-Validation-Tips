@@ -3,6 +3,7 @@ const form = document.getElementsByTagName("form")[0];
 const username = document.getElementById("name");
 const email = document.getElementById("email");
 const emailErrorMessage = document.querySelector(".emailErrorMessage");
+const userNameErrorMessage = document.querySelector(".userNameErrorMessage");
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -36,5 +37,28 @@ email.addEventListener("change", () => {
     emailErrorMessage.textContent = "Please enter a valid email address";
     emailErrorMessage.style.color = "red";
     emailErrorMessage.style.fontSize = "12px";
+  }
+});
+
+username.addEventListener("change", () => {
+  const value = username.value;
+  const pattern = email.getAttribute("pattern");
+  const regex = new RegExp(pattern);
+  const isMinLengthValid = value.length >= 5;
+
+  userNameErrorMessage.textContent = "";
+  userNameErrorMessage.style.color = "";
+  userNameErrorMessage.style.fontSize = "";
+
+  // Specific Error Message callout
+  if (!isMinLengthValid) {
+    userNameErrorMessage.textContent =
+      "Username must be at least 5 characters long";
+    userNameErrorMessage.style.color = "red";
+    userNameErrorMessage.style.fontSize = "12px";
+  } else if (!regex.test(value)) {
+    userNameErrorMessage.textContent = "Username should only contain numbers.";
+    userNameErrorMessage.style.color = "red";
+    userNameErrorMessage.style.fontSize = "12px";
   }
 });
