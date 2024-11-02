@@ -18,7 +18,7 @@ To ensure that the username field contains valid data, mark it as "required." If
 ### Tip:
 
 2. **Built-in HTML Validators**
-   - For Username, mark it as "required." If empty upon submission, the browser will ask: **"Please fill out this field."**
+   - For Username, mark it as "required." If empty upon submission, the browser will ask: `"Please fill out this field."`
    - Use `minlength="5"` to require a minimum of five characters.
 
 ---
