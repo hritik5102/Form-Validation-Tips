@@ -24,4 +24,6 @@ Form Validation Tips Every Web Developer should know!
     2. `setCustomValidity(message)` is a method available on input elements (<input>, <select>, <textarea>) that allows you to set a custom validation message for that input. This method overrides the browser's default validation message for specific validation constraints (like required, pattern, etc.).
     3. Together, they provide a robust mechanism for client-side form validation in web applications.
 
-
+6. Don't validate too early.
+    1. Instead we should wait for user to tab to the next input or when the current input is not focused i.e user tab away from the current input
+      -> We can do that by replacing onInput event handler to onChange event handler.
