@@ -10,3 +10,7 @@ Form Validation Tips Every Web Developer should know!
    1. For Username, we marked this as required, once you try to submit, the browser
   will asks for "Please fill out this field".
    2. You can put minlength="5" characters.
+
+3. Using Regex pattern matching
+    1. For now, we can assume that our username must contain a number so that the pattern attribute would look like this: **pattern="^[0-9]+$"**.
+    2. If you enter a string instead of a number, then an HTML tooltip will pop up and say: "Please match the request format"
