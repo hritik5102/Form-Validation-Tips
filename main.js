@@ -42,7 +42,7 @@ email.addEventListener("change", () => {
 
 username.addEventListener("change", () => {
   const value = username.value;
-  const pattern = email.getAttribute("pattern");
+  const pattern = username.getAttribute("pattern");
   const regex = new RegExp(pattern);
   const isMinLengthValid = value.length >= 5;
 
@@ -51,13 +51,13 @@ username.addEventListener("change", () => {
   userNameErrorMessage.style.fontSize = "";
 
   // Specific Error Message callout
-  if (!isMinLengthValid) {
-    userNameErrorMessage.textContent =
-      "Username must be at least 5 characters long";
+  if (!regex.test(value)) {
+    userNameErrorMessage.textContent = "Username should only contain numbers.";
     userNameErrorMessage.style.color = "red";
     userNameErrorMessage.style.fontSize = "12px";
-  } else if (!regex.test(value)) {
-    userNameErrorMessage.textContent = "Username should only contain numbers.";
+  } else if (!isMinLengthValid) {
+    userNameErrorMessage.textContent =
+      "Username must be at least 5 characters long";
     userNameErrorMessage.style.color = "red";
     userNameErrorMessage.style.fontSize = "12px";
   }
