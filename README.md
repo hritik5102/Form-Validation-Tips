@@ -50,5 +50,10 @@ To ensure that the username field contains valid data, mark it as "required." If
 10. **Remove Error Messages When Fixed**
     - Clear error messages as soon as the user meets the required conditions.
 
-11. **Always Perform Server-side Validation**
+11. **Indicate Required Fields With Red asterisk**
+      - How do you know if a field is required? A visual clue, right? 
+      - The red asterisk (*) is one of the most common visual patterns used to indicate that a field is required.
+      - It allows users to quickly identify mandatory fields, reducing trial and error and speeding up form completion.
+
+12. **Always Perform Server-side Validation**
     - Frontend validation can be bypassed if someone tampers with the form or submits it via Postman. Server-side validation is crucial for security.
