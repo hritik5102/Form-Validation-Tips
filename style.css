@@ -9,3 +9,9 @@ body {
 .passwordErrorMessage {
   height: 12px;
 }
+
+label[for="name"]::after,
+label[for="email"]::after {
+  content: " *";
+  color: red;
+}
