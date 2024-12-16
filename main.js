@@ -10,6 +10,7 @@ submitBtn.addEventListener("click", (e) => {
   form.reportValidity();
 });
 
+// Trigger built-in HTML tooltip for validation
 username.addEventListener("invalid", () => {
   const validityState = username.validity;
 
@@ -17,7 +18,7 @@ username.addEventListener("invalid", () => {
     username.setCustomValidity("Please enter a non-empty username");
   } else if (validityState.patternMismatch) {
     username.setCustomValidity(
-      "Username must be of 5 charachters and should only include a numbers"
+      "Username must be at least 5 characters long and should only include numbers."
     );
   } else {
     username.setCustomValidity("");

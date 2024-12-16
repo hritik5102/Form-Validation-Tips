@@ -15,3 +15,8 @@ label[for="email"]::after {
   content: " *";
   color: red;
 }
+
+#userNameSrOnly,
+#emailSrOnly {
+  display: none;
+}

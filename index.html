@@ -45,10 +45,17 @@
                       placeholder="Enter name"
                       minlength="5"
                       pattern="^[0-9]+$"
+                      aria-label="Enter your username"
+                      aria-describedby="userNameSrOnly"
+                      autocomplete="off"
                       required
                     />
                   </div>
-                  <div class="userNameErrorMessage"></div>
+                  <div class="userNameErrorMessage" aria-live="assertive"></div>
+                  <div id="userNameSrOnly">
+                    Username must be at least 5 characters long and should only
+                    include numbers.
+                  </div>
                 </div>
 
                 <!--  Email -->
@@ -61,14 +68,20 @@
                       id="email"
                       class="input"
                       aria-label="Enter your email"
+                      aria-describedby="emailSrOnly"
                       placeholder="e.g. example@gmail.com"
                       pattern="^[^@]+@[^@]+\.[^@]+$"
+                      autocomplete="off"
+                      required
                     />
                     <span class="icon is-small is-left">
                       <i class="fas fa-envelope"></i>
                     </span>
                   </div>
                   <div class="emailErrorMessage"></div>
+                  <div id="emailSrOnly">
+                    Please enter a valid email address (e.g., name@example.com).
+                  </div>
                 </div>
 
                 <!-- Password -->

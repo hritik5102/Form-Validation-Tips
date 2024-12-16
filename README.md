@@ -57,3 +57,8 @@ To ensure that the username field contains valid data, mark it as "required." If
 
 12. **Always Perform Server-side Validation**
     - Frontend validation can be bypassed if someone tampers with the form or submits it via Postman. Server-side validation is crucial for security.
+
+13. **Ensure your form is not only usable but also accessible**
+      - Adding validation to improve a form's usability is only half the challenge. The other half is ensuring the form is accessible, meaning that individuals with disabilities can understand whether a field is invalid and know how to correct it.
+      - Accessibility ensures everyone can access the content, while usability focuses on how easy it is to use the website. Together, they create the best possible user experience.
+      - From an accessibility perspective, we must ensure that everyone not only knows the field is invalid but also understands the error message.
