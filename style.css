@@ -20,3 +20,7 @@ label[for="email"]::after {
 #emailSrOnly {
   display: none;
 }
+
+input:user-invalid {
+  border-color: red;
+}
