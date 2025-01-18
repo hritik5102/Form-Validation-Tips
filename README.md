@@ -1,7 +1,7 @@
 # Form Validation Tips Every Web Developer Should Know!
 
 
-@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false}
+@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2 orderedList=false}
 
 <!-- code_chunk_output -->
 
@@ -81,6 +81,6 @@ To ensure that the username field contains valid data, mark it as "required." If
    - From an accessibility perspective, we must ensure that everyone not only knows the field is invalid but also understands the error message.
 
 
-**Medium Article**
+### Medium Article
 
 - [Medium - Form Validation Tips Every Web Developer Should Know!](https://medium.com/helpshift-engineering/form-validation-tips-every-web-developer-should-know-9d966d8fd571)
