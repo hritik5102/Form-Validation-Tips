@@ -1,7 +1,7 @@
 # Form Validation Tips Every Web Developer Should Know!
 
 
-@import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2 orderedList=false}
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=2 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
@@ -20,6 +20,22 @@
 - [Tip 13: Ensure your form is not only usable but also accessible](#tip-13-ensure-your-form-is-not-only-usable-but-also-accessible)
 
 <!-- /code_chunk_output -->
+
+
+- [Tip 01: Use the Correct HTML Input Types](#tip-01-use-the-correct-html-input-types)
+- [Tip 02: Built-in HTML Validators](#tip-02-built-in-html-validators)
+- [Tip 03: Using Regex for Pattern Matching](#tip-03-using-regex-for-pattern-matching)
+- [Tip 04: Custom Tooltip Validation Messages](#tip-04-custom-tooltip-validation-messages)
+- [Tip 05: Create Custom Tooltip Messages with JavaScript](#tip-05-create-custom-tooltip-messages-with-javascript)
+- [Tip 06: Avoid Early Validation](#tip-06-avoid-early-validation)
+- [Tip 07: Specific Validation Messages](#tip-07-specific-validation-messages)
+- [Tip 08: Static Height for Error Messages](#tip-08-static-height-for-error-messages)
+- [Tip 09: Highlight Errors with Danger Indicators](#tip-09-highlight-errors-with-danger-indicators)
+- [Tip 10: Remove Error Messages When Fixed](#tip-10-remove-error-messages-when-fixed)
+- [Tip 11: Indicate Required Fields With Red asterisk](#tip-11-indicate-required-fields-with-red-asterisk)
+- [Tip 12: Always Perform Server-side Validation](#tip-12-always-perform-server-side-validation)
+- [Tip 13: Ensure your form is not only usable but also accessible](#tip-13-ensure-your-form-is-not-only-usable-but-also-accessible)
+
 
 ## Tip 01: Use the Correct HTML Input Types
 If you set the input type as "text" for a password field, the password will not be obscured as you type. Similarly, if you use the "text" input type for an email field, the browser's default email pattern check will not be triggered.
